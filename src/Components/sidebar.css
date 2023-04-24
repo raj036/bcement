@@ -1,0 +1,167 @@
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    height: 100vh;
+    width: 200px;
+    padding: 20px;
+    transition: 0.5s all ease-in-out;
+}
+
+.title {
+    font-size: 28px;
+    padding: 0 0 0 10px;
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.burgerContainer {
+    content: '';
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background-color: rgba(133, 15, 133, 0.932);
+    border-radius: 50%;
+    right: -18px;
+    top: calc(9rem / 1.15);
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+}
+
+/* .burgerContainer::after {
+    content: "";
+    position: absolute;
+    right: 35px;
+    top: calc(35px / 2);
+    z-index: 0;
+    width: calc(6rem + 15rem);
+    background-color: lightgray;
+    height: 3px;
+    transition: 0.5s all ease-in-out;
+} */
+
+.burgerTrigger {
+    content: '';
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+
+.burgerMenu {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: rgba(133, 15, 133, 0.932);
+    position: relative;
+    border-radius: 4px;
+    bottom: calc(35px / 2);
+    left: 7px;
+    transition: 0.5s all ease-in-out;
+}
+
+.burgerMenu::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 6px;
+    border-radius: 4px;
+    transform: translateY(-6px) rotate(45deg);
+    transition: 0.5s all ease-in-out;
+}
+
+.burgerMenu::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: greenyellow;
+    position: absolute;
+    top: -6px;
+    border-radius: 4px;
+    transform: translateY(6px) rotate(-45deg);
+    transition: 0.5s all ease-in-out;
+}
+
+.contentsContainer {
+    margin: 2rem 0 0 0;
+
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+li:hover {
+    background-color: rgba(78, 58, 210, 0.649);
+    border-radius: 10px;
+}
+
+.dash-icn {
+    width: 25px;
+    height: 25px;
+    padding: 0 10px 0 0;
+}
+
+.list-li{
+    text-decoration: none;
+    color: #726767;
+    margin-left: 10px;
+}
+
+.sidebar.active {
+    width: 35px;
+}
+
+h2.title.active {
+    opacity: 0;
+}
+
+.burgerMenu.active {
+    background-color: greenyellow;
+}
+
+.burgerMenu.active::after {
+    transform: translateY(0rem) rotate(0deg);
+}
+
+.burgerMenu.active::before {
+    transform: translateY(0rem) rotate(0deg);
+}
+
+.list-li.active {
+    opacity: 0;
+}

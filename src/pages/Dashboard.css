@@ -1,0 +1,53 @@
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 44px;
+}
+
+.usr-img-icn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.voucher {
+    padding: 14px 40px;
+    border: none;
+    background-color: #9ea8c3;
+    border-radius: 10px;
+}
+
+.dashboard-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vendor-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+table , td , th{
+    border: 1px solid;
+    color: var(--text-color);
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    padding-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 82%;
+    margin:0 auto;
+}
