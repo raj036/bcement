@@ -3,7 +3,7 @@
 This project is a frontend application built with React for calculating cement raw materials based on live data. The app allows users to input data and get real-time calculations for cement production.
 
 ##
-![image alt]()
+![image alt](https://github.com/raj036/bcement/blob/8c168a171022bae4eeb25a856d4eb336e39d92c5/public/assets/CementProjImage.png)
 
 ## Features
 - **Real-time Calculation**: Live data integration for accurate material calculations.
